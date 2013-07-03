@@ -18,6 +18,9 @@ function handle_click(){
       return false;
   }
 
+  if (is_two_selected()) {
+    deactivate_tiles();
+  }
   // keep track of number of clicks
   num_clicks++;
 
